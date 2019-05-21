@@ -1,0 +1,10 @@
+.hero {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  color: white;
+  z-index: 3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
