@@ -3,10 +3,19 @@ import './base.css'
 import LevelOne from './levels/LevelOne';
 import Hero from './characters/Hero';
 
-const App = () => (
-  <div className="app" id="app"> 
-    <Hero />
-    <LevelOne />
+// Interfaces
+import HeroControlsProvider from './interfaces/HeroControls';
+
+
+const App = () => {
+  return (
+    <div className="app" id="app"> 
+    <HeroControlsProvider>
+      <Hero />
+      <LevelOne />
+    </HeroControlsProvider>
   </div>
-)
+  );
+};
+
 export default App;
